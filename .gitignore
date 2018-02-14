@@ -1,0 +1,15 @@
+# Static files
+static
+
+# Pvt stuff
+myblog/settings.py
+
+# Virtual Environment
+venv
+
+# Database
+db.sqlite3
+
+# other stuff
+.idea/
+*.pyc
