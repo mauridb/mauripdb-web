@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<body>
+
+		<div class="container">
+	    <div class="row">
+	        <div class="col-md-6 col-md-offset-3">
+	            <div class="login-panel panel panel-default">
+	                <div class="panel-heading">
+	                    <h3 class="panel-title">Please Sign Up</h3>
+	                </div>
+	                <div class="panel-body">
+	                    <form role="form" action='{% url 'sign-up' %}' method='POST'>
+	                    	{% csrf_token %}
+	                        <fieldset>
+	                            <div class="form-group">
+	                                <input class="form-control" placeholder="Username" name="username" type="text">
+	                            </div>
+	                            <div class="form-group col-md-12">
+                            		<div class="col-md-6">
+		                                <input class="form-control" placeholder="First name" name="first_name" type="text">	                            	
+                            		</div>
+                            		<div class="col-md-6">
+		                                <input class="form-control" placeholder="Last name" name="last_name" type="text">	                            	
+                            		</div>
+	                            </div>
+	                            <div class="form-group">
+	                                <input class="form-control" placeholder="E-mail" name="email" type="email">
+	                            </div>
+	                            <div class="form-group">
+	                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
+	                            </div>
+	                            <div class="checkbox">
+	                                <label>
+	                                    <input name="remember" type="checkbox" value="Remember Me">Remember Me
+	                                </label>
+	                            </div>
+	                            <!-- Change this to a button or input when using this as a form -->
+	                            <button class='btn btn-lg btn-success btn-block' type='submit' name='sign_up'>Sign Up</button>
+	                        </fieldset>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+
+
+
+
+	<script   src="http://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

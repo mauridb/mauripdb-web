@@ -3,6 +3,7 @@ static
 
 # Pvt stuff
 myblog/settings.py
+myblog.log
 
 # Virtual Environment
 venv
@@ -13,3 +14,5 @@ db.sqlite3
 # other stuff
 .idea/
 *.pyc
+.DS_Store
+templates/.DS_Store

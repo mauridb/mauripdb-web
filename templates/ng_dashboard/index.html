@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My web site</title>
+</head>
+<body>
+
+	<h2>USERS</h2>
+		{% for user in users %}
+			<p> {{ user.first_name}} - {{ user.last_name }} </p>
+		{% endfor %}
+	<h2>POST</h2>
+		{% for post in posts %}
+			<p> {{ post.title }} - {{ post.subtitle }} </p>
+		{% endfor %}
+	<h2>AUTHOR</h2>
+		{% for author in authors %}
+			<p> {{ author.web_user.first_name }} - {{ author.web_user.last_name }} </p>
+		{% endfor %}
+
+</body>
+</html>

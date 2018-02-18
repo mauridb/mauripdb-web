@@ -13,6 +13,7 @@ class Author(models.Model):
     def set_web_user_last_name(self, last_name):
         self.web_user.last_name = last_name
 
+
     # TODO: Create Post
     def create_post(self):
         pass
